@@ -22,6 +22,7 @@ body {
 }
 
 .quote-box {
+    position: absolute; /* Set to absolute positioning for random positioning */
     margin: 20px auto;
     padding: 20px;
     max-width: 400px;
@@ -29,7 +30,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    animation: fadeIn 5s ease-in-out forwards; /* Update the animation duration to 5 seconds */
+    animation: fadeIn 5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -63,10 +64,24 @@ body {
     animation-delay: 1.2s;
 }
 
+/* Random positioning using JavaScript (for demonstration purposes) */
+/* The actual implementation may vary depending on your project requirements */
+<script>
+    const quoteBoxes = document.querySelectorAll('.quote-box');
+    const containerWidth = document.querySelector('.container').offsetWidth;
+    const containerHeight = document.querySelector('.container').offsetHeight;
+
+    quoteBoxes.forEach(box => {
+        const randomX = Math.floor(Math.random() * (containerWidth - box.offsetWidth));
+        const randomY = Math.floor(Math.random() * (containerHeight - box.offsetHeight));
+
+        box.style.top = randomY + 'px';
+        box.style.left = randomX + 'px';
+    });
+</script>
+
 .quote {
     font-size: 36px;
     font-style: italic;
     text-align: center;
 }
-
-
