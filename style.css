@@ -52,8 +52,11 @@ body {
 }
 
 @keyframes floatAnimation {
-    to {
-        transform: translateY(-10px);
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    100% {
+        transform: translateY(-10px); /* End position */
     }
 }
 
