@@ -32,7 +32,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    animation: fadeIn 5s ease-in-out forwards;
+    animation: fadeIn 5s ease-in-out forwards, floatAnimation 5s infinite alternate; /* Add the floating animation */
 }
 
 .button-box {
@@ -46,35 +46,41 @@ body {
     }
 }
 
+@keyframes floatAnimation {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
 /* Manual positioning for each quote-box */
 .quote-box:nth-child(1) {
-    top: 500px;
-    left: 500px;
+    top: 50px;
+    left: 50px;
 }
 
 .quote-box:nth-child(2) {
-    top: 1050px;
-    left: 1000px;
+    top: 150px;
+    left: 100px;
 }
 
 .quote-box:nth-child(3) {
-    top: 2500px;
-    left: 500px;
+    top: 250px;
+    left: 50px;
 }
 
 .quote-box:nth-child(4) {
-    top: 500px;
-    right: 500px;
+    top: 50px;
+    right: 50px;
 }
 
 .quote-box:nth-child(5) {
-    top: 1500px;
-    right: 1000px;
+    top: 150px;
+    right: 100px;
 }
 
 .quote-box:nth-child(6) {
-    top: 2500px;
-    right: 500px;
+    top: 250px;
+    right: 50px;
 }
 
 .quote {
@@ -105,3 +111,4 @@ body {
 .button:hover {
     background-color: #0056b3; /* Customize button background color on hover */
 }
+
