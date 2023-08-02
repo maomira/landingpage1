@@ -162,7 +162,7 @@ body {
 
 /* Adjust the opacity and parallax effect for the second background */
 .parallax .black-background {
-    transform: translateY(calc(-50% + var(--parallax-offset, 0px) * 1.5));
+    transform: translateY(calc(-50% + var(--parallax-offset, 0px) * 2)); /* Increase the factor from 1.5 to 2 */
     animation: fadeIn 3s ease-in-out forwards, floatAnimation 5s linear infinite;
 }
 
