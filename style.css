@@ -36,8 +36,13 @@ body {
 }
 
 .button-box {
+    position: absolute; /* Set to absolute positioning for manual positioning */
+    top: 50%; /* Position the button in the center of the container vertically */
+    left: 50%; /* Position the button in the center of the container horizontally */
+    transform: translate(-50%, -50%); /* Center the button precisely in the middle */
     background-color: rgba(255, 255, 255, 0.8); /* Add background color for the button-box */
     text-align: center;
+    z-index: 1; /* Set a higher z-index to make the button-box appear on top of other elements */
 }
 
 @keyframes fadeIn {
@@ -111,4 +116,3 @@ body {
 .button:hover {
     background-color: #0056b3; /* Customize button background color on hover */
 }
-
