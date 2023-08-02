@@ -18,12 +18,15 @@ body {
 
 .container {
     position: relative;
-    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .quote-box {
     position: absolute; /* Set to absolute positioning for manual positioning */
-    margin: 20px auto;
     padding: 20px;
     max-width: 400px;
     background-color: transparent; /* Set the background color to transparent */
@@ -46,16 +49,34 @@ body {
 
 /* Manual positioning for each quote-box */
 .quote-box:nth-child(1) {
-    top: 50px;
+    top: -200px;
     left: 100px;
 }
 
 .quote-box:nth-child(2) {
-    top: 200px;
+    top: 100px;
+    left: -200px;
+}
+
+.quote-box:nth-child(3) {
+    top: -100px;
     left: 300px;
 }
 
-/* Add more manual positioning for other quote-boxes as needed */
+.quote-box:nth-child(4) {
+    top: 100px;
+    left: 400px;
+}
+
+.quote-box:nth-child(5) {
+    top: 200px;
+    left: 100px;
+}
+
+.quote-box:nth-child(6) {
+    top: 300px;
+    left: 300px;
+}
 
 .quote {
     font-size: 36px;
@@ -71,7 +92,7 @@ body {
 }
 
 .button {
-    display: block;
+    display: inline-block;
     margin: 10px auto;
     padding: 10px 20px;
     background-color: #007bff; /* Customize button background color */
