@@ -32,7 +32,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    animation: fadeIn 5s ease-in-out forwards, floatAnimation 5s infinite alternate; /* Add the floating animation */
+    animation: fadeIn 5s ease-in-out forwards, floatAnimation 5s linear infinite; /* Add the floating animation */
 }
 
 .button-box {
@@ -55,8 +55,11 @@ body {
     0% {
         transform: translateY(0); /* Start position */
     }
+    50% {
+        transform: translateY(-10px); /* Middle position */
+    }
     100% {
-        transform: translateY(-10px); /* End position */
+        transform: translateY(0); /* End position */
     }
 }
 
