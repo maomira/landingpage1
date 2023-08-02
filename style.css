@@ -46,41 +46,35 @@ body {
     }
 }
 
-/* Manual positioning for each quote-box to create a circle */
-.container .quote-box {
-    position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
-}
-
+/* Manual positioning for each quote-box */
 .quote-box:nth-child(1) {
-    top: calc(50% - 220px);
-    left: calc(50% - 20px);
+    top: calc(50% - 100px);
+    left: calc(50% - 350px);
 }
 
 .quote-box:nth-child(2) {
-    top: calc(50% - 180px);
-    left: calc(50% - 120px);
-}
-
-.quote-box:nth-child(3) {
     top: calc(50% - 100px);
     left: calc(50% - 200px);
 }
 
+.quote-box:nth-child(3) {
+    top: calc(50% - 100px);
+    left: calc(50% - 50px);
+}
+
 .quote-box:nth-child(4) {
-    top: calc(50% + 20px);
-    left: calc(50% - 120px);
+    top: calc(50% - 100px);
+    left: calc(50% + 50px);
 }
 
 .quote-box:nth-child(5) {
-    top: calc(50% + 80px);
-    left: calc(50% - 20px);
+    top: calc(50% - 100px);
+    left: calc(50% + 200px);
 }
 
 .quote-box:nth-child(6) {
-    top: calc(50% + 20px);
-    left: calc(50% + 80px);
+    top: calc(50% - 100px);
+    left: calc(50% + 350px);
 }
 
 .quote {
