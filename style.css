@@ -46,41 +46,35 @@ body {
     }
 }
 
-/* Manual positioning for each quote-box to create a circle */
-.container .quote-box {
-    position: absolute;
-}
-
-/* Left side quotes */
+/* Manual positioning for each quote-box */
 .quote-box:nth-child(1) {
-    top: calc(50% - 160px);
-    left: calc(50% - 270px);
+    top: 50px;
+    left: 50px;
 }
 
 .quote-box:nth-child(2) {
-    top: calc(50% - 60px);
-    left: calc(50% - 320px);
+    top: 150px;
+    left: 100px;
 }
 
 .quote-box:nth-child(3) {
-    top: calc(50% + 40px);
-    left: calc(50% - 320px);
+    top: 250px;
+    left: 50px;
 }
 
-/* Right side quotes */
 .quote-box:nth-child(4) {
-    top: calc(50% - 160px);
-    left: calc(50% + 170px);
+    top: 50px;
+    right: 50px;
 }
 
 .quote-box:nth-child(5) {
-    top: calc(50% - 60px);
-    left: calc(50% + 220px);
+    top: 150px;
+    right: 100px;
 }
 
 .quote-box:nth-child(6) {
-    top: calc(50% + 40px);
-    left: calc(50% + 220px);
+    top: 250px;
+    right: 50px;
 }
 
 .quote {
