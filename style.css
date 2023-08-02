@@ -50,30 +50,18 @@ body {
     left: 300px;
 }
 
-.quote-box:nth-child(3) {
-    top: 100px;
-    left: 500px;
-}
-
-.quote-box:nth-child(4) {
-    top: 300px;
-    left: 700px;
-}
-
-.quote-box:nth-child(5) {
-    top: 400px;
-    left: 200px;
-}
-
-.quote-box:nth-child(6) {
-    top: 500px;
-    left: 800px;
-}
+/* Add more manual positioning for other quote-boxes as needed */
 
 .quote {
     font-size: 36px;
     font-style: italic;
     text-align: center;
 }
+
+.author {
+    font-size: 16px; /* Adjust the font size for the author text */
+    text-align: center;
+}
+
 
 
